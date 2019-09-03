@@ -11,7 +11,7 @@ class CodeSample(object):
 
     # 全局变量初始化在init中
     def __init__(self):
-        self.team_member = ["TOM", "lin.shen", "jixing.hao"]
+        self.team_member = ["TOM", "lin.shen", "jixin.hao"]
 
     # 方法名使用lower_test_case 形式
     def function_test(self):
@@ -39,6 +39,10 @@ class CodeSample(object):
     def day_one(self):
         plan_auto_work = {"培训": "Pass", "安装git": "Pass"}
         plan_test_work = {"测试160": "50%"}
+
+    def day_two(self):
+        plan_auto_work1 = {"使用git commit,git push,git pull": "Pass"}
+        plan_auto_work2 = {"python lessons": "4"}
 
 
 if __name__ == '__main__':
