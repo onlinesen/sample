@@ -44,6 +44,11 @@ class CodeSample(object):
         plan_auto_work1 = {"使用git commit,git push,git pull": "Pass"}
         plan_auto_work2 = {"python lessons": "4"}
 
+    def day_three(self):
+        plan_auto_work1 = {"安装Anaconda": "Pass"}
+        plan_auto_work2 = {"git创建\切换分支": "Pass"}
+        plan_auto_work3 = {"Learn QSA": "学习中"}
+
 
 if __name__ == '__main__':
     code_sample = CodeSample()
