@@ -36,6 +36,22 @@ class CodeSample(object):
             finally:
                 print(u"必须要完成的任务:" + i)
 
+
+class Class(object):
+    git = "git clone, git branch, git checkout develop(master), git pull, git commit, git push origin master(develop), git merge, git reset, comflic"
+    shell = "ls, grep, found,df, du, locate, mkdir, scp, cp, mv, ln, chmod, chown,su,ssh,apt-get install"
+    pycharm = "run, debug, code format, clean, settings,git commit"
+    pip = "install, list, requirement"
+    code = "principle"
+    python_online_class = "https://pythonprinciples.com/lessons/"
+    enviroment_manager = "anaconda:python2, python3"
+    ui_test_framework = "uiautomator2:https://github.com/openatx/uiautomator2"
+    android = "activity, broadcast, service, content"
+    adb = "getprop, pull, push, settings, logat"
+    web = "html, javascript, bootstrap, flask"
+
+
+class Traning(object):
     def day_one(self):
         plan_auto_work = {"培训": "Pass", "安装git": "Pass"}
         plan_test_work = {"测试160": "50%"}
