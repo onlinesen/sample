@@ -36,6 +36,10 @@ class CodeSample(object):
             finally:
                 print(u"必须要完成的任务:" + i)
 
+    #如果函数未被本class内部调用，请声明为静态方法
+    @staticmethod
+    def static_function(p):
+        return p
 
 class Class(object):
     git = "git clone, git branch, git checkout develop(master), git pull, git commit, git push origin master(develop), git merge, git reset, comflic"
