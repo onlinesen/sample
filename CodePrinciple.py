@@ -77,6 +77,11 @@ class Traning(object):
         plan_auto_work2 = {"培训anaconda": "Pass"}
         plan_auto_work3 = {"python lessons": "完成3小课", "整理测试任务中的自动化部分": "50%"}
 
+    def day_five(self):
+        plan_auto_work1 = {"android studio": "学习android的一些知识，和andrdoid原生的测试框架Instrumentation"}
+        plan_auto_work2 = {"python lessons": "完成4小课", "整理测试任务中的自动化部分": "100%"}
+
+
 
 if __name__ == '__main__':
     code_sample = CodeSample()
