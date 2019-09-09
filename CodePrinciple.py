@@ -33,7 +33,7 @@ class CodeSample(object):
             except ZeroDivisionError as e:
                 print(u"出现ZeroDivisionError:", e)
                 continue
-            except Exception:
+            except Exception as e:
                 print(u"有不确定的异常时，要处理的任务")
             finally:
                 print(u"必须要完成的任务:" + i)
