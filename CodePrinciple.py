@@ -28,18 +28,21 @@ class CodeSample(object):
                 if i == "jixing.hao":
                     print(1 / 0)
             except IndexError as e:
-                print("get member error:", e)
+                print(u"出现IndexError:", e)
                 continue
             except ZeroDivisionError as e:
-                print("ZeroDivisionError:", e)
+                print(u"出现ZeroDivisionError:", e)
                 continue
+            except Exception:
+                print(u"有不确定的异常时，要处理的任务")
             finally:
                 print(u"必须要完成的任务:" + i)
 
-    #如果函数未被本class内部调用，请声明为静态方法
+    # 如果函数未被本class内部调用，请声明为静态方法
     @staticmethod
     def static_function(p):
         return p
+
 
 class Class(object):
     git = "git clone, git branch, git checkout develop(master), git pull, git commit, git push origin master(develop), git merge, git reset, comflic"
@@ -72,7 +75,12 @@ class Traning(object):
     def day_four(self):
         plan_auto_work1 = {"安装android studio": "Pass"}
         plan_auto_work2 = {"培训anaconda": "Pass"}
-        plan_auto_work3 = {"python lessons": "完成3小课","整理测试任务中的自动化部分":"50%"}
+        plan_auto_work3 = {"python lessons": "完成3小课", "整理测试任务中的自动化部分": "50%"}
+
+    def day_five(self):
+        plan_auto_work1 = {"android studio": "学习android的一些知识，和andrdoid原生的测试框架Instrumentation"}
+        plan_auto_work2 = {"python lessons": "完成4小课", "整理测试任务中的自动化部分": "100%"}
+
 
 
 if __name__ == '__main__':
