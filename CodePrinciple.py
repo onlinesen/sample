@@ -65,7 +65,7 @@ class Traning(object):
 
     def day_two(self):
         plan_auto_work1 = {"使用git commit,git push,git pull": "Pass"}
-        plan_auto_work2 = {"python lessons": "4"}
+        plan_auto_work2 = {"python lessons": "2"}
 
     def day_three(self):
         plan_auto_work1 = {"安装Anaconda": "Pass"}
@@ -80,6 +80,10 @@ class Traning(object):
     def day_five(self):
         plan_auto_work1 = {"android studio": "学习android的一些知识，和andrdoid原生的测试框架Instrumentation"}
         plan_auto_work2 = {"python lessons": "完成4小课", "整理测试任务中的自动化部分": "100%"}
+
+    def day_six(self):
+        plan_auto_work1 = {"adb": "整理一些用到的adb 命令"}
+        plan_auto_work2 = {"python": "练习写Python程序"}
 
 
 
