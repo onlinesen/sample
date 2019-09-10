@@ -48,4 +48,12 @@ def shell(cmd):
 
 
 def list_packages():
-    result = shell("pm list packages -f")
+    result = shell("pm list packages")
+    _display_adb_error(result)
+    lines = result.split("\n")
+
+    packages = []
+    for line in lines:
+        return
+
+

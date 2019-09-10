@@ -85,6 +85,9 @@ class Traning(object):
         plan_auto_work1 = {"adb": "整理一些用到的adb 命令"}
         plan_auto_work2 = {"python": "练习写Python程序"}
 
+    def day_seven(self):
+        plan_auto_work1 = {"adb": "整理一些用到的adb 命令"}
+        plan_auto_work2 = {"整理分类需求":"50%", "python": "写Paddington_MC_3需求用例"}
 
 
 if __name__ == '__main__':

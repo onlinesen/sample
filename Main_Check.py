@@ -2,6 +2,7 @@
 # coding=utf8
 from modules import adb
 from modules import utils
+from plugins import soft_gps
 import os
 
 
@@ -11,7 +12,8 @@ class AllInfo(object):
 
     def execute(self):
         self.devices = adb.devices_list
-        print len(self.devices)
+        self.gps = soft_gps.SoftGps()
+
 
 
 if __name__ == "__main__":
