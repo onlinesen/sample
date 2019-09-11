@@ -19,6 +19,14 @@ class CodeSample(object):
         sample_name = "Joe"
         print(sample_name)
 
+    """
+    Requirement: V500_Tech_Spec_V3.0/Paddington_AG_3
+    CheckPoint: Check Default Android Apps to be included
+                1. APK Version: >1.2.3.4
+                2. Icons Sytle: Rounded-Corner
+    Coder: lin.shen@tinno.com
+    Date: 2019/09/10
+    """
     def test_get_name(self):
         # 使用try except，确保不会跳出测试
         for i in self.team_member:
