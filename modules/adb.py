@@ -47,6 +47,27 @@ def shell(cmd):
     return result
 
 
+def data_mode(close=True):
+    if close:
+        shell("svc data disable")
+    else:
+        shell("svc data enable")
+
+
+def wifi_mode(close=True):
+    if close:
+        shell("svc wifi disable")
+    else:
+        shell("svc wifi enable")
+
+
+def nfc_mode(close=True):
+    if close:
+        shell("svc nfc disable")
+    else:
+        shell("svc nfc enable")
+
+
 def list_packages():
     result = shell("pm list packages")
     _display_adb_error(result)
