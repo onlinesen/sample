@@ -2,7 +2,7 @@
 # coding=utf8
 from modules import adb
 from modules import utils
-from plugins import soft_gps
+from plugins import soft_gps, soft_storage
 from plugins import soft_settings
 import os
 
@@ -14,7 +14,8 @@ class AllInfo(object):
     def execute(self):
         self.devices = adb.devices_list
        # self.gps = soft_gps.SoftGps(self)
-        self.blue = soft_settings.SoftSettings(self)
+       # self.blue = soft_settings.SoftSettings(self)
+        self.storage = soft_storage.SoftStorage(self)
 
 
 if __name__ == "__main__":

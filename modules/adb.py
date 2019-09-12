@@ -12,6 +12,63 @@ def _display_adb_error(result):
     return False
 
 
+def get_prop(property_name, default_value=None):
+    result = shell("getprop" + property_name)
+    _display_adb_error(result)
+
+    if result is None or result.strip() == '':
+        return default_value
+    return result.strip()
+
+
+def get_fingerprint():
+    return get_prop('ro.build.fingerprint')
+
+
+def get_product_model():
+    return get_prop('ro.product.model')
+
+
+def get_product_name():
+    return get_prop('ro.product.name')
+
+
+def get_software_info():
+    board = get_prop('ro.board.platform')
+    software = {
+        'fingerprint': get_fingerprint(),
+        'version_sdk': get_prop('ro.build.version.sdk'),
+        'security_patch': get_prop('ro.build.version.security_patch'),
+        'custom_build_version': get_prop('ro.custom.build.version'),
+        'device': get_prop('ro.product.device'),
+        'brand': get_prop('ro.product.brand'),
+        'cpu_abi': get_prop('ro.product.cpu.abi'),
+        'manufacturer': get_prop('ro.product.manufacturer'),
+        'model': get_product_model(),
+        'name': get_product_name(),
+        'product': get_prop('ro.build.product'),
+        'version_release': get_prop('ro.build.version.release'),
+        'version_incremental': get_prop('ro.build.version.incremental'),
+        'id': get_prop('ro.build.id'),
+        'type': get_prop('ro.build.type'),
+        'tags': get_prop('ro.build.tags'),
+        'internal_build_version': get_prop('ro.internal.build.version'),
+       # 'client_ids': get_client_ids(),
+        'board': board,
+        'vendor': utils.get_soc_from_board(board),
+       # 'go_edition': is_go_edition(),
+       # 'marketing_name': get_marketing_name()
+    }
+    return software
+
+
+def get_hardware_info():
+    hardware = {
+        'hardware': get_prop('ro.hardware')
+    }
+    return hardware
+
+
 def list_devices(details=False):
     args = ["devices"]
     if details:
