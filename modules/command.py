@@ -9,6 +9,8 @@ try:
 except ImportError:
     import os
 
+    DEVNULL = open(os.devnull, 'wb')
+
 
 def execute(cmd, args=None, display_cmd=False, disable_out=False, disable_error=False, no_wait=False, is_shell=False):
     if cmd is None:
