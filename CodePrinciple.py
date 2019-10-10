@@ -101,6 +101,11 @@ class Traning(object):
         plan_auto_work1 = {"adb": "整理一些用到的adb 命令"}
         plan_auto_work2 = {"整理分类需求":"80%", "python": "编写测试用例"}
 
+    def work(self):
+        plan_08 = {"10/8", "pretest工具客户版本信息显示:100%"}
+        plan_09 = {"10/9", "pretest工具widget压力测试:80%"}
+        plan_10 = {"10/8", "pretest工具calculator压力测试:100%"}
+
 
 if __name__ == '__main__':
     code_sample = CodeSample()
