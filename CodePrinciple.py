@@ -27,6 +27,7 @@ class CodeSample(object):
     Coder: lin.shen@tinno.com
     Date: 2019/09/10
     """
+
     def test_get_name(self):
         # 使用try except，确保不会跳出测试
         for i in self.team_member:
@@ -95,7 +96,7 @@ class Traning(object):
 
     def day_seven(self):
         plan_auto_work1 = {"adb": "整理一些用到的adb 命令"}
-        plan_auto_work2 = {"整理分类需求":"50%", "python": "写Paddington_MC_3需求用例"}
+        plan_auto_work2 = {"整理分类需求": "50%", "python": "写Paddington_MC_3需求用例"}
 
     def day_eight(self):
         plan_auto_work1 = {"adb": "整理一些用到的adb 命令"}
@@ -107,6 +108,15 @@ class Traning(object):
         plan_10 = {"10/8", "pretest工具calculator压力测试:100%"}
 
 
+"""下周两个整理工作：
+1. adb命令对比下qsa/modules/adb.py,缺少的部分添加作为功能，并做好注释；
+2. 整理soft_plugin 插件的所有功能，做成表格(表格包含：
+    . 插件名称
+    . function功能说明，如  def abc(c)
+      adc:检查音量大小
+            参数c: 字符型，设备product name（ro.producdt.name)
+            返回值：整型，当前音量大小，异常返回None
+"""
 if __name__ == '__main__':
     code_sample = CodeSample()
     code_sample.test_get_name()
